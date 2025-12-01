@@ -1,12 +1,12 @@
-# Meu Diário de Hábitos - Projeto AV2 Mobile
+# Diário de Hábitos - Projeto AV2 Mobile
 
-## 🎯 Visão Geral do Projeto
+## Visão Geral do Projeto
 
 Esta é uma aplicação mobile desenvolvida em **React Native (Expo)** para a disciplina de [Nome da Disciplina]. O objetivo é permitir que o usuário crie, visualize, edite e acompanhe seus hábitos diários.
 
 A aplicação implementa as funcionalidades essenciais de **CRUD (Criação, Leitura, Atualização e Deleção)**, além de persistir os dados localmente usando **AsyncStorage** e utilizar os componentes nativos exigidos pela avaliação.
 
-## ✨ Funcionalidades e Componentes Implementados
+## Funcionalidades e Componentes Implementados
 
 ### Funcionalidades Essenciais
 
@@ -15,7 +15,7 @@ A aplicação implementa as funcionalidades essenciais de **CRUD (Criação, Lei
 * **Arquivamento:** Permite desativar hábitos (Arquivar) para limpar a tela principal, com a opção de reativá-los (Desarquivar) na tela de Configurações.
 * **Persistência de Dados:** Todos os hábitos e os registros de conclusão são salvos e carregados automaticamente no dispositivo usando AsyncStorage.
 
-### Componentes Nativos (Objetivos de Aprendizagem)
+### Componentes Nativos 
 
 O projeto cumpre a exigência de utilizar os seguintes componentes do React Native:
 
