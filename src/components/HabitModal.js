@@ -4,10 +4,20 @@
 
 import React from 'react';
 import {
-    View, Text, Modal, ScrollView, TextInput, TouchableOpacity, Switch
+    View, Text, Modal, ScrollView, TextInput, TouchableOpacity, Switch, Platform
 } from 'react-native';
 import { Picker } from '@react-native-picker/picker';
 import styles from './../styles/styles';
+
+const pickerStyle = Platform.select({
+    ios: {
+        height: 100,
+        color: '#fffff'
+    },
+    android: {
+        color: '#333',
+    }
+});
 
 // Recebe todos os valores do formulário e funções manipuladoras diretamente via props.
 export default function HabitModal({
@@ -58,12 +68,13 @@ export default function HabitModal({
 
                         {/* Seletor de Frequência */}
                         <Text style={styles.label}>Frequência</Text>
+                        <Text style={styles.label}>Frequência</Text>
                         <View style={styles.pickerContainer}>
                             <Picker
                                 selectedValue={habitFrequency}
                                 onValueChange={(itemValue) => setHabitFrequency(itemValue)}
-                                style={styles.picker}
-
+                                // Aplica o novo estilo com a altura correta para o iOS:
+                                style={[styles.picker, pickerStyle]}
                                 mode="dropdown"
                             >
                                 <Picker.Item label="Diária" value="daily" />
