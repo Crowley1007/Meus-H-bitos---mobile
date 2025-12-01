@@ -8,6 +8,8 @@ A aplicação implementa as funcionalidades essenciais de **CRUD (Criação, Lei
 
 ## Funcionalidades e Componentes Implementados
 
+* O checklist completo de testes manuais está disponível no arquivo: CHECKLIST.md.
+
 ### Funcionalidades Essenciais
 
 * **CRUD Completo:** Criação, edição e exclusão de hábitos.
