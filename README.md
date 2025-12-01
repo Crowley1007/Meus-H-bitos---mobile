@@ -35,7 +35,7 @@ O projeto cumpre a exigência de utilizar os seguintes componentes do React Nati
 | **Código Fonte (GitHub)** | `https://github.com/Crowley1007/Meus-H-bitos---mobile` | Repositório principal com o histórico de commits. |
 | **Link do Expo** | `https://expo.dev/@crowley07/meuapp` | Link público para visualização no aplicativo Expo Go. |
 
-## 🛠️ Instruções de Execução (Para Rodar Localmente)
+## Instruções de Execução (Para Rodar Localmente)
 
 Para rodar o projeto em sua máquina, siga os passos abaixo:
 
@@ -59,6 +59,6 @@ Para rodar o projeto em sua máquina, siga os passos abaixo:
 
 ---
 
-## 👨‍💻 Autor
+## Autor
 
 Desenvolvido por: José Rafael Oliveira Palmeira de Souza - 01709219
