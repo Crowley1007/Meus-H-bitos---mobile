@@ -59,4 +59,4 @@ Para rodar o projeto em sua máquina, siga os passos abaixo:
 
 ## 👨‍💻 Autor
 
-Desenvolvido por: [Seu Nome/Usuário]
+Desenvolvido por: José Rafael Oliveira Palmeira de Souza - 01709219
