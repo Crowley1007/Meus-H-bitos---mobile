@@ -63,7 +63,7 @@ export default function HabitModal({
                                 selectedValue={habitFrequency}
                                 onValueChange={(itemValue) => setHabitFrequency(itemValue)}
                                 style={styles.picker}
-                                itemStyle={styles.pickerItem}
+
                                 mode="dropdown"
                             >
                                 <Picker.Item label="Diária" value="daily" />
@@ -75,8 +75,8 @@ export default function HabitModal({
                         <View style={styles.switchContainer}>
                             <Text style={styles.label}>Hábito ativo</Text>
                             <Switch
-                                value={isActive} 
-                                onValueChange={setIsActive} 
+                                value={isActive}
+                                onValueChange={setIsActive}
                                 trackColor={{ false: '#ddd', true: '#4CAF50' }}
                                 thumbColor={isActive ? '#fff' : '#f4f3f4'}
                             />
