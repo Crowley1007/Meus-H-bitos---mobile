@@ -5,7 +5,7 @@ import React from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 import styles from './../styles/styles';
 
-// HabitItem recebe todas as funções de CRUD e verificação de estado via props (prop drilling do App.js)
+// HabitItem recebe todas as funções de CRUD e verificação de estado via props 
 export default function HabitItem({
     habit, // O objeto de dados do hábito em si
     isCompletedToday, // Função auxiliar para verificar se o hábito foi feito hoje

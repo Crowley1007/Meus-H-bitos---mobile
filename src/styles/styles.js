@@ -101,7 +101,7 @@ export default StyleSheet.create({
     },
     actionButtonText: {
         fontSize: 18,
-        color: '#ffffff', // Adicionado cor para o texto dos botões
+        color: '#ffffff',
     },
     emptyState: {
         flex: 1,
@@ -221,7 +221,7 @@ export default StyleSheet.create({
     },
 
 
-    // Estilos para o componente Picker
+    // Estilos para o Picker
     pickerContainer: {
         borderWidth: 1,
         borderColor: '#252525',
@@ -425,7 +425,7 @@ export default StyleSheet.create({
     sectionTitle: {
         fontSize: 18,
         fontWeight: 'bold',
-        color: '#ffffff', // Corrigido para branco
+        color: '#ffffff',
         marginTop: 20,
         marginBottom: 10,
         paddingHorizontal: 15,
@@ -434,7 +434,7 @@ export default StyleSheet.create({
     archivedListContainer: {
         marginHorizontal: 15,
         marginBottom: 20,
-        backgroundColor: '#1a1a1a', // Corrigido para fundo escuro
+        backgroundColor: '#1a1a1a',
         borderRadius: 8,
         overflow: 'hidden',
     },
@@ -446,26 +446,26 @@ export default StyleSheet.create({
         paddingVertical: 12,
         paddingHorizontal: 15,
         borderBottomWidth: 1,
-        borderBottomColor: '#252525', // Corrigido para cor escura
+        borderBottomColor: '#252525',
     },
 
     archivedItemText: {
         fontSize: 16,
-        color: '#888888', // Corrigido para cinza escuro
+        color: '#888888',
         textDecorationLine: 'line-through',
         flexShrink: 1,
         marginRight: 10,
     },
 
     unarchiveButton: {
-        backgroundColor: '#00d9ff', // Corrigido para sua cor primária
+        backgroundColor: '#00d9ff',
         paddingVertical: 6,
         paddingHorizontal: 10,
         borderRadius: 5,
     },
 
     unarchiveButtonText: {
-        color: '#0a0a0a', // Corrigido para preto
+        color: '#0a0a0a',
         fontWeight: 'bold',
         fontSize: 12,
     },

@@ -36,7 +36,6 @@ export default function HabitModal({
         >
             <View style={styles.modalOverlay}>
                 <View style={styles.modalContent}>
-                    {/* Título dinâmico: 'Editar Hábito' ou 'Novo Hábito' */}
                     <Text style={styles.modalTitle}>
                         {editingHabit ? 'Editar Hábito' : 'Novo Hábito'}
                     </Text>
@@ -49,7 +48,7 @@ export default function HabitModal({
                         <TextInput
                             style={styles.input}
                             value={habitName} // Valor controlado pelo estado do App.js
-                            onChangeText={setHabitName} // Atualiza o estado do App.js
+                            onChangeText={setHabitName} 
                             placeholder="Ex: Beber 2L de água"
                             placeholderTextColor="#999"
                         />
