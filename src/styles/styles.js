@@ -100,6 +100,7 @@ export default StyleSheet.create({
     },
     actionButtonText: {
         fontSize: 18,
+        color: '#ffffff', // Adicionado cor para o texto dos botões
     },
     emptyState: {
         flex: 1,
@@ -226,15 +227,17 @@ export default StyleSheet.create({
         borderRadius: 12,
         backgroundColor: '#0a0a0a',
         overflow: 'hidden', // Importante para iOS
+        paddingVertical: 0, // <<< AJUSTE: Remove padding vertical que pode causar espaço extra
+        paddingHorizontal: 0, // <<< AJUSTE: Remove padding horizontal
     },
     picker: {
-        height: 50, // Altura padrão
-        color: '#ffffff', // Cor do texto selecionado
+        // height: 50, // <<< REMOVIDO: A altura é definida no HabitModal.js via Platform.select para funcionar no iOS
+        color: '#ffffff', // Cor do texto selecionado (Força branco)
         backgroundColor: '#0a0a0a',
     },
     pickerItem: {
-        color: '#ffffff', // Para garantir visibilidade em iOS
-        backgroundColor: '#0a0a0a',
+        // Este estilo não tem efeito no componente Picker.
+        // Se fosse necessário, a cor já é forçada no 'picker' acima.
     },
 
 
@@ -410,7 +413,7 @@ export default StyleSheet.create({
     sectionTitle: {
         fontSize: 18,
         fontWeight: 'bold',
-        color: '#000', // ou sua cor primária
+        color: '#ffffff', // Corrigido para branco
         marginTop: 20,
         marginBottom: 10,
         paddingHorizontal: 15,
@@ -419,9 +422,9 @@ export default StyleSheet.create({
     archivedListContainer: {
         marginHorizontal: 15,
         marginBottom: 20,
-        backgroundColor: '#fff',
+        backgroundColor: '#1a1a1a', // Corrigido para fundo escuro
         borderRadius: 8,
-        overflow: 'hidden', // Para que os itens fiquem dentro do container
+        overflow: 'hidden',
     },
 
     archivedItem: {
@@ -431,26 +434,26 @@ export default StyleSheet.create({
         paddingVertical: 12,
         paddingHorizontal: 15,
         borderBottomWidth: 1,
-        borderBottomColor: '#eee',
+        borderBottomColor: '#252525', // Corrigido para cor escura
     },
 
     archivedItemText: {
         fontSize: 16,
-        color: '#666',
-        textDecorationLine: 'line-through', // Para indicar que está inativo
+        color: '#888888', // Corrigido para cinza escuro
+        textDecorationLine: 'line-through',
         flexShrink: 1,
         marginRight: 10,
     },
 
     unarchiveButton: {
-        backgroundColor: '#007AFF', // Azul padrão de iOS (ou sua cor secundária)
+        backgroundColor: '#00d9ff', // Corrigido para sua cor primária
         paddingVertical: 6,
         paddingHorizontal: 10,
         borderRadius: 5,
     },
 
     unarchiveButtonText: {
-        color: '#fff',
+        color: '#0a0a0a', // Corrigido para preto
         fontWeight: 'bold',
         fontSize: 12,
     },
@@ -463,7 +466,7 @@ export default StyleSheet.create({
     },
 
     statsCard: {
-        backgroundColor: '#1a1a1a', // Fundo escuro
+        backgroundColor: '#1a1a1a',
         borderRadius: 16,
         padding: 16,
         marginHorizontal: 15,
@@ -473,7 +476,7 @@ export default StyleSheet.create({
     },
     statsText: {
         fontSize: 16,
-        color: '#ffffff', // Texto branco para o tema escuro
+        color: '#ffffff',
         marginBottom: 6,
         fontWeight: '500',
     },
