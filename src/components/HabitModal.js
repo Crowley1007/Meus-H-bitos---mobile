@@ -11,13 +11,13 @@ import styles from './../styles/styles';
 
 const pickerStyle = Platform.select({
     ios: {
-        height: 100,
+        height: 170,
         color: '#FFFFFF',
+        backgroundColor: '#0a0a0a',
     },
-    android: {
-        color: '#333',
-    }
+    default: styles.picker
 });
+
 
 // Recebe todos os valores do formulário e funções manipuladoras diretamente via props.
 export default function HabitModal({
@@ -68,18 +68,29 @@ export default function HabitModal({
 
                         {/* Seletor de Frequência */}
                         <Text style={styles.label}>Frequência</Text>
+
                         <View style={styles.pickerContainer}>
                             <Picker
                                 selectedValue={habitFrequency}
-                                onValueChange={(itemValue) => setHabitFrequency(itemValue)}
-                                // Aplica o novo estilo com a altura correta para o iOS:
-                                style={[styles.picker, pickerStyle]}
-                                mode="dropdown"
+                                onValueChange={setHabitFrequency}
+                                style={Platform.OS === "ios" ? styles.pickerIOS : styles.pickerAndroid}
+                                dropdownIconColor={Platform.OS === "android" ? "#000" : "#fff"}
                             >
-                                <Picker.Item label="Diária" value="daily" />
-                                <Picker.Item label="Semanal" value="weekly" />
+
+                                <Picker.Item
+                                    label="Diária"
+                                    value="daily"
+                                    color={Platform.OS === "ios" ? "#fff" : "#000"}
+                                />
+                                <Picker.Item
+                                    label="Semanal"
+                                    value="weekly"
+                                    color={Platform.OS === "ios" ? "#fff" : "#000"}
+                                />
+
                             </Picker>
                         </View>
+
 
                         {/* Switch de Ativação */}
                         <View style={styles.switchContainer}>

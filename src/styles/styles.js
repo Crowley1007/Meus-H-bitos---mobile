@@ -1,6 +1,7 @@
 // ============== ESTILOS ==============
 
 import { StyleSheet } from "react-native";
+import { Platform } from "react-native";
 
 
 export default StyleSheet.create({
@@ -226,18 +227,29 @@ export default StyleSheet.create({
         borderColor: '#252525',
         borderRadius: 12,
         backgroundColor: '#0a0a0a',
-        overflow: 'hidden', // Importante para iOS
-        paddingVertical: 0, // <<< AJUSTE: Remove padding vertical que pode causar espaço extra
-        paddingHorizontal: 0, // <<< AJUSTE: Remove padding horizontal
+        overflow: 'hidden',
+        paddingHorizontal: 0,
+        paddingVertical: Platform.OS === 'android' ? 4 : 0,
+        height: Platform.OS === 'android' ? 50 : 'auto',
     },
-    picker: {
-        // height: 50, // <<< REMOVIDO: A altura é definida no HabitModal.js via Platform.select para funcionar no iOS
-        color: '#ffffff', // Cor do texto selecionado (Força branco)
+
+    pickerIOS: {
+        height: 170,
+        color: '#fff',
         backgroundColor: '#0a0a0a',
     },
+
+    pickerAndroid: {
+        color: '#fff',
+        backgroundColor: 'transparent',
+    },
+
+    picker: {
+
+        color: '#ffffff',
+        backgroundColor: 'transparent',
+    },
     pickerItem: {
-        // Este estilo não tem efeito no componente Picker.
-        // Se fosse necessário, a cor já é forçada no 'picker' acima.
     },
 
 
