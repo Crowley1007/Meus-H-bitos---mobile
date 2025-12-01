@@ -12,7 +12,7 @@ import styles from './../styles/styles';
 const pickerStyle = Platform.select({
     ios: {
         height: 100,
-        color: '#fffff'
+        color: '#FFFFFF',
     },
     android: {
         color: '#333',
@@ -67,7 +67,6 @@ export default function HabitModal({
                         />
 
                         {/* Seletor de Frequência */}
-                        <Text style={styles.label}>Frequência</Text>
                         <Text style={styles.label}>Frequência</Text>
                         <View style={styles.pickerContainer}>
                             <Picker
